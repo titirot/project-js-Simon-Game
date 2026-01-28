@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק סיימון</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>משחק סיימון</h1>
+    
+    <!-- תצוגת רמה וניקוד -->
+    <div id="stats">
+        <span id="level">רמה: 0</span>
+        <span id="score">ניקוד: 0</span>
+    </div>
+
+    <!-- בחירת רמה -->
+    <div id="level-selection">
+        <h2>בחר רמה להתחיל:</h2>
+        <select id="level-select">
+            <option value="1">רמה 1</option>
+            <option value="2">רמה 2</option>
+            <option value="3">רמה 3</option>
+            <option value="4">רמה 4</option>
+        </select>
+        <div id="color-selection" style="display: none;">
+            <h3>בחר 4-5 צבעים:</h3>
+            <div class="color-options">
+                <input type="checkbox" id="green" name="colors" value="green">ירוק
+                <input type="checkbox" id="red" name="colors" value="red">אדום
+                <input type="checkbox" id="yellow" name="colors" value="yellow">צהוב
+                <input type="checkbox" id="blue" name="colors" value="blue">כחול
+                <input type="checkbox" id="purple" name="colors" value="purple">סגול
+                <input type="checkbox" id="orange" name="colors" value="orange">כתום
+                <input type="checkbox" id="pink" name="colors" value="pink">ורוד
+                <input type="checkbox" id="brown" name="colors" value="brown">חום
+                <input type="checkbox" id="gray" name="colors" value="gray">אפור
+                <input type="checkbox" id="cyan" name="colors" value="cyan">טורקיז
+            </div>
+            <button id="confirm-colors">אשר צבעים</button>
+        </div>
+    </div>
+
+    <!-- לוח המשחק -->
+    <div id="game-board" style="display: none;">
+        <div class="button" id="green" data-color="green"></div>
+        <div class="button" id="red" data-color="red"></div>
+        <div class="button" id="yellow" data-color="yellow"></div>
+        <div class="button" id="blue" data-color="blue"></div>
+        <div class="button" id="purple" data-color="purple"></div>
+        <div class="button" id="orange" data-color="orange"></div>
+        <div class="button" id="pink" data-color="pink"></div>
+        <div class="button" id="brown" data-color="brown"></div>
+        <div class="button" id="gray" data-color="gray"></div>
+        <div class="button" id="cyan" data-color="cyan"></div>
+    </div>
+
+    <!-- כפתור התחלה -->
+    <button id="start-button">התחל משחק</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

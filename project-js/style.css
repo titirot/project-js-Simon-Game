@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+}
+
+#stats {
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#stats span {
+    margin: 0 20px;
+}
+
+/* בחירת רמה וצבעים */
+#level-selection {
+    margin: 20px 0;
+}
+
+#level-selection h2, #color-selection h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#level-select, #confirm-colors {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: white;
+    border: none;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+    cursor: pointer;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.color-options input {
+    margin: 5px;
+}
+
+#confirm-colors:hover {
+    background: linear-gradient(135deg, #ffaa00, #ff5500);
+    box-shadow: 0 0 30px rgba(255, 136, 0, 1);
+}
+
+/* לוח המשחק */
+#game-board {
+    display: none;
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    width: 390px;
+    height: 260px;
+    background: radial-gradient(circle, #ff758c, #ff7eb3);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(255, 165, 0, 0.8);
+    border: 5px solid white;
+}
+
+/* עיצוב הכפתורים */
+.button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, opacity 0.2s, box-shadow 0.3s;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+#green { background-color: #34eb86; box-shadow: 0 0 25px #34eb86; }
+#red { background-color: #ff4f4f; box-shadow: 0 0 25px #ff4f4f; }
+#yellow { background-color: #ffdb58; box-shadow: 0 0 25px #ffdb58; }
+#blue { background-color: #3498db; box-shadow: 0 0 25px #3498db; }
+#purple { background-color: #9b59b6; box-shadow: 0 0 25px #9b59b6; }
+#orange { background-color: #ff8c00; box-shadow: 0 0 25px #ff8c00; }
+#pink { background-color: #ff69b4; box-shadow: 0 0 25px #ff69b4; }
+#brown { background-color: #8b4513; box-shadow: 0 0 25px #8b4513; }
+#gray { background-color: #808080; box-shadow: 0 0 25px #808080; }
+#cyan { background-color: #00ced1; box-shadow: 0 0 25px #00ced1; }
+
+.button:active {
+    transform: scale(1.2);
+    opacity: 0.8;
+    box-shadow: 0 0 35px white;
+}
+
+/* כפתור התחלה */
+#start-button {
+    padding: 15px 35px;
+    font-size: 22px;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+    transition: all 0.3s;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+#start-button:hover {
+    background: linear-gradient(135deg, #ffaa00, #ff5500);
+    box-shadow: 0 0 30px rgba(255, 136, 0, 1);
+    transform: scale(1.15);
+}
