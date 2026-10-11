@@ -26,8 +26,8 @@ An interactive, browser-based implementation of the classic Simon memory game, b
 
 | Game Board & Active Play |
 | :---: |
-|  <img width="1913" height="1016" alt="צילום מסך 2025-02-22 213036" src="https://github.com/user-attachments/assets/73a72d3c-f783-4d9e-b823-1a3cbdf4320a" />
- |
+| <img width="1913" height="1016" alt="צילום מסך 2025-02-22 213036" src="https://github.com/user-attachments/assets/83125e0a-49a0-4680-aa17-30f88c1ae7e8" /> |
+ 
 
 ---
 
